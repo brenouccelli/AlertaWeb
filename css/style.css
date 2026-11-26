@@ -1,3 +1,5 @@
+/* Alerta Cidadão — folha de estilos única */
+
 :root {
   --mare: #0b2a3b;
   --mare-2: #12394f;
@@ -22,6 +24,7 @@
   --raio: 18px;
   --largura: 1120px;
 }
+
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 
@@ -51,3 +54,38 @@ ul { margin: 0; padding: 0; list-style: none; }
 .pular:focus { top: 12px; }
 
 .icone { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+
+/* ---------- Topo ---------- */
+.topo {
+  position: sticky; top: 0; z-index: 50;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--linha);
+}
+.topo .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 68px; }
+
+.marca {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: var(--titulo); font-weight: 700; font-size: 1.25rem;
+  color: var(--mare); text-decoration: none; letter-spacing: -0.02em;
+}
+.marca .icone { font-size: 1.7rem; color: var(--rio); fill: var(--rio); stroke: none; }
+
+.menu { display: flex; gap: 4px; }
+.menu a {
+  display: block; padding: 8px 14px; border-radius: 999px;
+  font-size: 0.95rem; font-weight: 500; color: var(--tinta); text-decoration: none;
+  transition: background 0.15s;
+}
+.menu a:hover { background: var(--espuma); }
+.menu a[aria-current="page"] { background: var(--mare); color: var(--papel); }
+
+.menu-btn {
+  display: none; align-items: center; gap: 8px;
+  border: 1px solid var(--linha); background: var(--papel); color: var(--tinta);
+  font: inherit; font-weight: 600; font-size: 0.95rem;
+  padding: 8px 14px; border-radius: 999px; cursor: pointer;
+}
+.menu-btn .icone { font-size: 1.2rem; }
+
