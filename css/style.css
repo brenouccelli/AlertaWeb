@@ -22,3 +22,32 @@
   --raio: 18px;
   --largura: 1120px;
 }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: var(--corpo);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--tinta);
+  background: var(--espuma);
+  -webkit-font-smoothing: antialiased;
+}
+
+img, svg { max-width: 100%; }
+a { color: var(--rio); }
+h1, h2, h3, h4 { font-family: var(--titulo); line-height: 1.12; margin: 0; letter-spacing: -0.015em; }
+p { margin: 0 0 1em; }
+ul { margin: 0; padding: 0; list-style: none; }
+
+:focus-visible { outline: 3px solid var(--atencao); outline-offset: 3px; border-radius: 6px; }
+
+.wrap { width: 100%; max-width: var(--largura); margin: 0 auto; padding: 0 24px; }
+.pular {
+  position: absolute; left: 12px; top: -60px; z-index: 100;
+  background: var(--papel); padding: 10px 16px; border-radius: 8px; font-weight: 600;
+}
+.pular:focus { top: 12px; }
+
+.icone { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; flex: none; }
