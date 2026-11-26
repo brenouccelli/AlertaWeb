@@ -1,0 +1,24 @@
+:root {
+  --mare: #0b2a3b;
+  --mare-2: #12394f;
+  --rio: #1b6f8f;
+  --rio-claro: #bfe3ee;
+  --espuma: #eef6f7;
+  --papel: #ffffff;
+  --tinta: #0e2230;
+  --muda: #4b6272;
+  --linha: #d3e2e7;
+
+  --ok: #17855b;
+  --ok-fundo: #dff3ea;
+  --atencao: #f0a800;
+  --atencao-fundo: #fff1cc;
+  --alerta: #d4382a;
+  --alerta-fundo: #fde3df;
+
+  --titulo: 'Bricolage Grotesque', 'Trebuchet MS', system-ui, sans-serif;
+  --corpo: 'Public Sans', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+
+  --raio: 18px;
+  --largura: 1120px;
+}
